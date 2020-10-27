@@ -1,2 +1,2 @@
-# Tyrion: backend-end for stremio
+# Tyrion: back-end for stremio
 
