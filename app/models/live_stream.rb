@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-##############################################################
-# Live Stream model
-##############################################################
 class LiveStream
   belongs_to :topic
 
