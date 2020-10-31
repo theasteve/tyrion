@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class User
+class User < ApplicationRecord
   validate :full_name
   validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
 
