@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Topic
+class Topic < ApplicationRecord
   belongs_to :user
 
   has_one :live_stream

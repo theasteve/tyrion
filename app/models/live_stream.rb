@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class LiveStream
+class LiveStream < ApplicationRecord
   belongs_to :topic
 
   validate :start_date_time
