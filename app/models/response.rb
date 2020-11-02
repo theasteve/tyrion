@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-class Answer < ApplicationRecord
+class Response < ApplicationRecord
   belongs_to :topic
   belongs_to :user
 
-  validate :time
+  validate :date
 end
 

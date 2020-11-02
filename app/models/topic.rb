@@ -4,6 +4,7 @@ class Topic < ApplicationRecord
   belongs_to :user
 
   has_one :live_stream
+  has_one :response
 
   has_many :votes
   has_many :up_votes, through: :votes
