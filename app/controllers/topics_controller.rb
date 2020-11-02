@@ -1,12 +1,12 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all
-    render json: @topics, status: 200
+    render json: TopicSerializer.new(@topics).serializable_hash, status: 200
   end
 
   def show
     @topic = Topic.find(params[:id])
-    render json: @topic, status: 201
+    render json: TopicSerializer.new(@topic).serializable_hash, status: 200
   end
 
   private
