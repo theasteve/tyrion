@@ -1,11 +1,11 @@
-class CreateAnswers < ActiveRecord::Migration[6.0]
+class CreateResponses < ActiveRecord::Migration[6.0]
   def change
-    create_table :answers do |t|
+    create_table :responses do |t|
       t.references :user, null: false, foreign_key: true
       t.references :topic, null: false, foreign_key: true
-      t.string :title
       t.string :description
-      t.datetime :time
+      t.decimal :price, precision: 8, scale: 2
+      t.datetime :date
     end
   end
 end

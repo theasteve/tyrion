@@ -12,5 +12,5 @@ class User < ApplicationRecord
   has_many :live_stream_attendees
   has_many :live_streams_attended, through: :live_streams_attendees
 
-  has_many :answers
+  has_many :responses
 end
