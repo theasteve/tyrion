@@ -6,7 +6,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
-    render json: TopicSerializer.new(@topic).serializable_hash, status: 201
+    render json: TopicSerializer.new(@topic).serializable_hash, status: 200
   end
 
   private
