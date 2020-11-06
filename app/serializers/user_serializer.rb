@@ -1,4 +1,4 @@
 class TopicSerializer
   include JSONAPI::Serializer
-  attributes :id
+  attributes :id, :email, :full_name
 end
