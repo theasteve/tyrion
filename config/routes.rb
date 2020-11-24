@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   resources :topics
   resources :responses
   resources :users, only: [:create]
+
   get "westeros/*all", to: "westeros#index"
+  get "assets/*all", to: "westeros#index"
 end
