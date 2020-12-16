@@ -5,6 +5,8 @@ class User < ApplicationRecord
 
   validate :full_name
   validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
+  validates_presence_of :email
+  validates_uniqueness_of :email
 
   has_many :topics, foreign_key: :user_id
 
