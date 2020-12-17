@@ -6,8 +6,3 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-topic = Topic.create({title: 'Linked List Java',
-                      description: 'HOw to iterate',
-                      questions: 'What is big O',
-                      user_id: 1})
-topic.save!
