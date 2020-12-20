@@ -1,4 +1,4 @@
 class StockSerializer
   include JSONAPI::Serializer
-  attributes :ticker, :name, :price
+  attributes :id, :ticker, :name, :price
 end
