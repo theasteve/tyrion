@@ -10,62 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_29_220317) do
+ActiveRecord::Schema.define(version: 2020_12_17_163745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "live_stream_attendees", force: :cascade do |t|
-    t.bigint "topic_id", null: false
-    t.bigint "user_id", null: false
-    t.index ["topic_id"], name: "index_live_stream_attendees_on_topic_id"
-    t.index ["user_id"], name: "index_live_stream_attendees_on_user_id"
+  create_table "stock_transactions", force: :cascade do |t|
+    t.string "followers"
+    t.string "holders"
+    t.string "buyers"
+    t.string "sellers"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "live_streams", force: :cascade do |t|
-    t.datetime "start_date_time"
-    t.bigint "topic_id", null: false
-    t.index ["topic_id"], name: "index_live_streams_on_topic_id"
-  end
-
-  create_table "responses", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "topic_id", null: false
-    t.string "description"
-    t.decimal "price", precision: 8, scale: 2
-    t.datetime "date"
-    t.index ["topic_id"], name: "index_responses_on_topic_id"
-    t.index ["user_id"], name: "index_responses_on_user_id"
-  end
-
-  create_table "topics", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.string "title"
-    t.string "description"
-    t.string "questions"
-    t.index ["user_id"], name: "index_topics_on_user_id"
+  create_table "stocks", force: :cascade do |t|
+    t.string "ticker"
+    t.string "name"
+    t.decimal "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "full_name"
     t.string "email"
     t.string "password_digest"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "votes", force: :cascade do |t|
-    t.bigint "topic_id", null: false
-    t.bigint "user_id", null: false
-    t.integer "count"
-    t.index ["topic_id"], name: "index_votes_on_topic_id"
-    t.index ["user_id"], name: "index_votes_on_user_id"
-  end
-
-  add_foreign_key "live_stream_attendees", "topics"
-  add_foreign_key "live_stream_attendees", "users"
-  add_foreign_key "live_streams", "topics"
-  add_foreign_key "responses", "topics"
-  add_foreign_key "responses", "users"
-  add_foreign_key "topics", "users"
-  add_foreign_key "votes", "topics"
-  add_foreign_key "votes", "users"
 end

@@ -8,13 +8,6 @@ class User < ApplicationRecord
   validates_presence_of :email
   validates_uniqueness_of :email
 
-  has_many :topics, foreign_key: :user_id
-
-  has_many :votes
-  has_many :topics_voted, through: :votes
-
-  has_many :live_stream_attendees
-  has_many :live_streams_attended, through: :live_streams_attendees
-
-  has_many :responses
+  has_many :stock_transactions
+  has_many :stocks, through: :stock_transactions
 end
