@@ -10,18 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_17_163745) do
+ActiveRecord::Schema.define(version: 2020_12_20_173052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "stock_transactions", force: :cascade do |t|
-    t.string "followers"
-    t.string "holders"
-    t.string "buyers"
-    t.string "sellers"
+    t.boolean "following"
+    t.boolean "holding"
+    t.boolean "buying"
+    t.boolean "selling"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.bigint "stock_id", null: false
+    t.index ["stock_id"], name: "index_stock_transactions_on_stock_id"
+    t.index ["user_id"], name: "index_stock_transactions_on_user_id"
   end
 
   create_table "stocks", force: :cascade do |t|
@@ -40,4 +44,6 @@ ActiveRecord::Schema.define(version: 2020_12_17_163745) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "stock_transactions", "stocks"
+  add_foreign_key "stock_transactions", "users"
 end
