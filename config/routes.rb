@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:create, :index]
   resources :sessions, only: [:create, :delete]
   resources :stocks, only: [:index, :show]
+  resources :top_stocks, only: :index
 
   get :logout, to: "sessions#logout"
 

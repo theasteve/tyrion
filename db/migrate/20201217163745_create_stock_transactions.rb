@@ -1,6 +1,7 @@
 class CreateStockTransactions < ActiveRecord::Migration[6.0]
   def change
     create_table :stock_transactions do |t|
+      t.boolean :track
       t.boolean :following
       t.boolean :holding
       t.boolean :buying
