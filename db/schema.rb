@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2020_12_17_163745) do
   enable_extension "plpgsql"
 
   create_table "stock_transactions", force: :cascade do |t|
+    t.boolean "track"
     t.boolean "following"
     t.boolean "holding"
     t.boolean "buying"
@@ -31,7 +32,10 @@ ActiveRecord::Schema.define(version: 2020_12_17_163745) do
   create_table "stocks", force: :cascade do |t|
     t.string "ticker"
     t.string "name"
-    t.decimal "price"
+    t.integer "following", default: 0
+    t.integer "holding", default: 0
+    t.integer "buying", default: 0
+    t.integer "selling", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
