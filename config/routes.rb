@@ -8,4 +8,7 @@ Rails.application.routes.draw do
 
   get "westeros/*all", to: "westeros#index"
   get "assets/*all", to: "westeros#index"
+
+
+  get '/auth/:provider/callback', to: 'sessions#create'
 end
