@@ -3,11 +3,12 @@ class SessionsController < ApplicationController
   include CurrentUserConcern
 
   def create
-    user = User.find_by(email: params["email"]).try(:authenticate, params["password"])
+    user = User.from_omniauth(session_params)
+
     if user
       session[:user_id] = user.id
       cookies[:logged_in] = { value: true, expires: 30.days }
-      render json: { status: :created, logged_in: true, user: UserSerializer.new(user) }
+      redirect_to "/westeros/top-stocks"
     else
       render json: { status: 401 }
     end
@@ -17,5 +18,13 @@ class SessionsController < ApplicationController
     reset_session
     cookies[:logged_in] = { value: false }
     render json: { status: 200, logged_out: true }
+  end
+
+  def session_params
+    auth = request.env["omniauth.auth"]
+    params = auth.slice("provider", "uid", "name")
+    params.name = auth.dig(:info, :name)
+    params.image_url = auth.dig(:extra, :raw_info, :subreddit, :icon_img).split('?').first
+    params = ActionController::Parameters.new(params).permit!
   end
 end
