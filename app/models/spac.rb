@@ -1,4 +1,2 @@
 class Spac < ApplicationRecord
-
 end
-

@@ -20,4 +20,3 @@ task load_spacs: :environment do
     })
   end
 end
-
