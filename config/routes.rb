@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :delete]
   resources :stocks, only: [:index, :show]
   resources :top_stocks, only: :index
+  resources :spacs, only: [:index, :show]
 
   get :logout, to: "sessions#logout"
 

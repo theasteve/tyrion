@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_17_163745) do
+ActiveRecord::Schema.define(version: 2020_12_29_205757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "spacs", force: :cascade do |t|
+    t.string "ticker"
+    t.string "name"
+    t.string "target"
+    t.date "definitive_agreement"
+    t.date "preliminary_filing"
+    t.date "first_revision"
+    t.date "second_revision"
+    t.date "third_revision"
+    t.date "definitive_filing"
+    t.date "merger_meeting"
+    t.string "expected_close"
+    t.string "investor_presentation_url"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "stock_transactions", force: :cascade do |t|
     t.boolean "track"
