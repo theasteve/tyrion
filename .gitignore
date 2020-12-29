@@ -22,3 +22,6 @@
 /config/master.key
 
 logfile
+
+# Ignore CSV files
+/public/*
