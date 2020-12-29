@@ -23,5 +23,3 @@
 
 logfile
 
-# Ignore CSV files
-/public/*
