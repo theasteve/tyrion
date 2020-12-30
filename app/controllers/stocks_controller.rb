@@ -12,7 +12,7 @@ class StocksController < ApplicationController
       db_stocks = ActiveRecord::Base.connection.execute(sql_top_stocks)
       stocks = db_stocks.map { |record| Stock.find(record['id']) }
     else
-      stocks = Stock.where("ticker LIKE ?", "%#{params[:query]}%").limit(10)
+      stocks = Stock.search(params[:query]).limit(10)
     end
     
     render json: StockSerializer.new(stocks).serializable_hash, status: 200
