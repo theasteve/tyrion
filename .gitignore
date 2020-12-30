@@ -22,3 +22,7 @@
 /config/master.key
 
 logfile
+
+# Ignore .env file
+.env
+/.env
