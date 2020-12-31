@@ -14,8 +14,7 @@ class CreateStocks < ActiveRecord::Migration[6.0]
     execute <<-SQL
       ALTER TABLE stocks
       ADD COLUMN searchable tsvector GENERATED ALWAYS AS (
-        setweight(to_tsvector('english', coalesce(ticker, '')), 'A') ||
-        setweight(to_tsvector('english', coalesce(name,'')), 'B')
+        to_tsvector('simple', coalesce(ticker, ''))
       ) STORED;
     SQL
 

@@ -5,11 +5,10 @@ class Stock < ApplicationRecord
 
   #https://pganalyze.com/blog/full-text-search-ruby-rails-postgres
   pg_search_scope :search,
-                  against: { ticker: 'A', name: 'B' },
+                  against: :ticker,
                   using: { 
-                    tsearch: { prefix: true, dictionary: 'english', tsvector_column: 'searchable' } 
+                    tsearch: { prefix: true, dictionary: 'simple', tsvector_column: 'searchable' } 
                   }
-
 
   has_many :stock_transactions
   has_many :users, through: :stock_transactions
