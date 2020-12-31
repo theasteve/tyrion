@@ -6,4 +6,5 @@ task load_stocks: :environment do
   table.each do |stock|
     Stock.create({ ticker: stock[0], name: stock[1]})
   end
+  puts "Stocks loaded"
 end
