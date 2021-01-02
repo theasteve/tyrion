@@ -14,7 +14,7 @@ class StocksController < ApplicationController
     else
       stocks = Stock.search(params[:query]).limit(10)
     end
-    
+
     render json: StockSerializer.new(stocks).serializable_hash, status: 200
   end
 
@@ -23,13 +23,22 @@ class StocksController < ApplicationController
     render json: StockSerializer.new(stock).serializable_hash, status: 200
   end
 
+  def update
+    stock = Stock.find(params[:id])
+    stock.update!(stock_params)
+    render json: StockSerializer.new(stock).serializable_hash, status: 204
+  end
+
   private
 
   def stock_params
     params.require(:data).require(:attributes).permit(
       :ticker,
       :name,
-      :price
+      :following,
+      :holding,
+      :buying,
+      :selling
     )
   end
 end
