@@ -20,6 +20,10 @@ class SessionsController < ApplicationController
     render json: { status: 200, logged_out: true }
   end
 
+  def redirect_on_error
+    redirect_to "/westeros/top-stocks"
+  end
+
   def session_params
     auth = request.env["omniauth.auth"]
     params = auth.slice("provider", "uid", "name")
