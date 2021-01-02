@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :users, only: [:create, :index]
   resources :sessions, only: [:create, :delete]
-  resources :stocks, only: [:index, :show]
+  resources :stocks, only: [:index, :show, :update]
   resources :spacs, only: [:index, :show]
 
   get :logout, to: "sessions#logout"
