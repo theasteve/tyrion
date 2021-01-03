@@ -1,6 +1,6 @@
 class SpacsController < ApplicationController
   def index
-    spacs = Spac.all
+    spacs = Spac.all.order('definitive_agreement desc')
     render json: SpacSerializer.new(spacs).serializable_hash, status: 200
   end
 
