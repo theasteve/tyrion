@@ -1,4 +1,6 @@
 class StocksController < ApplicationController
+  include CurrentUserConcern
+
   def index
     if params[:query].nil?
       sql_top_stocks = ("
@@ -24,21 +26,61 @@ class StocksController < ApplicationController
   end
 
   def update
+    return nil unless @current_user
+
+    stock_transaction = StockTransaction.where(
+      user_id: @current_user.id,
+      stock_id: params[:id]
+    ).last
+
+    if stock_transaction
+      update_stock_transaction(field: stock_params[:field], stock_id: params[:id], stock_transaction: stock_transaction)
+    else
+      create_stock_transaction(field: stock_params[:field], stock_id: params[:id])
+    end
+
     stock = Stock.find(params[:id])
-    stock.update!(stock_params)
-    render json: StockSerializer.new(stock).serializable_hash, status: 204
+    render json: StockSerializer.new(stock).serializable_hash, status: 200
   end
 
   private
 
   def stock_params
     params.require(:data).require(:attributes).permit(
-      :ticker,
-      :name,
-      :following,
-      :holding,
-      :buying,
-      :selling
+      :id, :field, :ticker, :name, :following, :holding, :selling, :buying
     )
+  end
+
+  def create_stock_transaction(field:, stock_id:)
+    stock_transaction = StockTransaction.new({
+      user_id: @current_user.id,
+      stock_id: stock_id,
+      track: true
+    })
+    stock_transaction[field] = true;
+    stock_transaction.save
+
+    update_stock(field: field, stock_id: stock_id, stock_transaction: stock_transaction)
+  end
+
+  def update_stock_transaction(field:, stock_id:, stock_transaction:)
+    if stock_transaction[field] == true
+      stock_transaction[field] = false
+      update_stock(field: field, stock_id: stock_id, stock_transaction: stock_transaction)
+    else
+      stock_transaction[field] = true
+      update_stock(field: field, stock_id: stock_id, stock_transaction: stock_transaction)
+    end
+    stock_transaction.save
+  end
+
+  def update_stock(field:, stock_id:, stock_transaction:)
+    stock = Stock.find(stock_id)
+    if stock_transaction[field] == true
+      stock[field] = stock[field] += 1
+    else
+      stock[field] = stock[field] -= 1
+    end
+    stock.save
   end
 end
