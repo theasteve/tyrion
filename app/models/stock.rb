@@ -15,6 +15,11 @@ class Stock < ApplicationRecord
 
   validates_uniqueness_of :ticker
   validates :name, presence: true
+
+  validates :following, numericality: { greater_than_or_equal_to: 0 }
+  validates :buying, numericality: { greater_than_or_equal_to: 0 }
+  validates :selling, numericality: { greater_than_or_equal_to: 0 }
+  validates :holding, numericality: { greater_than_or_equal_to: 0 }
 end
 
 
