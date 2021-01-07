@@ -2,7 +2,10 @@ class StocksController < ApplicationController
   include CurrentUserConcern
 
   def index
-    if params[:query].nil?
+    if params[:dashboard]
+      stocks = @current_user.stocks.joins(:stock_transactions)
+        .where('stock_transactions.user_id  = ?', @current_user.id)
+    elsif params[:query].nil?
       sql_top_stocks = ("
         SELECT s.id, s.name, s.ticker, count(w.track) as tracked_stocks
         FROM stocks s LEFT JOIN stock_transactions w ON s.id = w.stock_id
