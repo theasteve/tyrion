@@ -45,9 +45,11 @@ development:
 #
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
   <<: *default
-  database: tyrion_production
-  username: tyrion
-  password: <%= ENV['TYRION_DATABASE_PASSWORD'] %>
+  database: <%= ENV['RDS_DATABASE'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOST'] %>
+  port: 5432
+  secret_key_base: <%=ENV["SECRET_KEY_BASE"] %>
