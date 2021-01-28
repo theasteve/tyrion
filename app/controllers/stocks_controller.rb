@@ -3,8 +3,8 @@ class StocksController < ApplicationController
 
   def index
     if params[:dashboard]
-      stocks = @current_user.stocks.joins(:stock_transactions)
-        .where('stock_transactions.user_id  = ?', @current_user.id)
+      stocks = @current_user.stocks.includes(:stock_transactions)
+        .where('stock_transactions.user_id  = ?', @current_user.id).distinct
     elsif params[:query].nil?
       sql_top_stocks = ("
         SELECT s.id, s.name, s.ticker, count(w.track) as tracked_stocks
