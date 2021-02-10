@@ -1,53 +1,70 @@
 Ticker,Name,Target,Definitive Agreement,Preliminary filing,First Revision,Second Revision,Third Revision,Definitive Filing,Merger Meeting,Expected Close,Investor Presentation
 ESSC,East Stone Acquisition Corporation,Ufin Holdings,9/23/2020,11/12/2020,,,,,,First Quarter 2021,https://www.sec.gov/Archives/edgar/data/1760683/000121390020038635/ea130371ex99-1_eaststone.htm
 SBE,Switchback Energy Acquisition Corporation,Chargepoing,9/24/2020,10/19/2020,12/4/2020,12/15/2020,12/28/2020,1/8/2021,2/11/2021,SET,https://www.sec.gov/Archives/edgar/data/1777393/000121390020037548/ea130019-425_switchbackenerg.htm
-NOVS,Novus Capital Corporation,AppHarvest,9/29/2020,10/9/2020,11/9/2020,12/1/2020,1/7/2021,1/11/2021,1/29/2021,SET,https://novuscapitalcorporation.com/wp-content/uploads/2020/10/Project-Agro-Investor-Presentation-vPublic_2_AppHarvest-1.pdf
 MCAC,Mountain Crest Acquisition Corp,Playboy,10/1/2020,11/9/2020,12/18/2020,1/14/2021,,1/21/2021,2/9/2021,SET,https://sec.report/Document/0001104659-20-110689/tm2032160d1_ex99-2.htm
 SRAC,Stable Road Acquisition Corp,Momentus,10/7/2020,11/2/2020,12/14/2020,,,,,First Quarter 2021,https://momentus.space/wp-content/uploads/2020/12/Momentus_Featured-Investor-Presentation_December-2020.pdf
-AMCI,AMCI Acquisition Corp,Advent Technologies,10/12/2020,11/9/2020,11/25/2020,12/31/200,1/14/2021,1/20/2021,2/2/2021,SET,https://www.sec.gov/Archives/edgar/data/1744494/000114036120023351/brhc10016074_ex99-1.htm
 RPLA,Replay Acquisition Corp,Finance of America cos,10/13/2020,11/5/2020,12/22/2020,,,,,First Quarter 2021,https://static1.squarespace.com/static/5c6204c3a09a7e3babbf4140/t/5fc7cc59a66cae076627a266/1606929501075/Analyst+Day+Presentation+%28Dec+2020%29.pdf
 CCX,Churchill Capital Corp ,Skillsoft,10/13/2020,,,,,,,First Quarter 2021,https://www.sec.gov/Archives/edgar/data/1774675/000110465920114582/tm2033075-1_425.htm
-PCPL,CC Neuberger Principal Holdings ,E2open,10/14/2020,11/6/2020,12/14/2020,1/6/2021,,1/12/2021,2/2/2021,SET,https://s1.q4cdn.com/673545953/files/doc_presentations/2020/10/2020.10_E2open-Investor-Presentation_vFF.pdf
-FSDC,FS Development Corp,Gemini Therapeutics,10/15/2020,11/2/2020,12/7/2020,12/28/2020,1/15/2025,1/19/2021,2/3/2021,SET,https://geminitherapeutics.com/wp-content/uploads/Gemini-Therapeutics-Corporate-Presentation-10-15-2020-clean-645AM.pdf
 PANA,Panacea Acquisition Corp,Nuvation Bio,10/21/2020,11/12/2020,12/18/2020,1/8/2021,1/19/2020,1/20/21,2/9/2021,SET,https://sec.report/Document/0001213900-20-032470/ea128648ex99-2_panaceaacq.htm
 LOAC,Longevity Acquisition Corporation ,4D Pharma,10/22/2020,11/25/2020,1/8/2021,,,,,First Quarter 2021,https://www.4dpharmaplc.com/application/files/5716/0335/2432/4D_pharma_Management_presentation_Oct_2020.pdf
 DMYD,DMY Technology Group ,Genius Sports,10/27/2020,1/15/2021,,,,,,First Quarter 2021,https://news.geniussports.com/wp-content/uploads/2020/10/GSG-Investor-Presentation.pdf
 ALAC,Alberton Acquisition Corporation,SolarMax,10/28/2020,12/30/2020,,,,,,First Quarter 2021,https://www.sec.gov/Archives/edgar/data/1748621/000121390020011660/f10q0320_albertonacq.htm
-IPV,InterPrivate Acquisition Corp,Aeva,11/2/2020,12/3/2020,1/14/2021,,,,,First Quarter 2021,https://aeva.ai/app/uploads/2020/11/Aeva-Investor-Presentation-11.02.2020-1-1.pdf
+IPV,InterPrivate Acquisition Corp,Aeva,11/2/2020,12/3/2020,1/14/2021,2/2/2021,,,,First Quarter 2021,https://aeva.ai/app/uploads/2020/11/Aeva-Investor-Presentation-11.02.2020-1-1.pdf
 JWS,Jaws Acquisition Corp,Cano Health,11/12/2020,,,,,,,First Quarter 2021,https://www.jawsholdings.com/documents/Cano_Health-Investor-Presentation.pdf
 NBAC,Newborn Acquisition Corp,Nuuve,11/12/2020,12/23/2020,,,,,,First Quarter 2021,https://nuvve.com/wp-content/uploads/2020/11/nuvve-investor-presentation-november-2020-v9.pdf
 ROCH,Roth CH Acquisition I Co,PureCycle Technologies ,11/16/2020,,,,,,,First Quarter 2021,https://d1io3yog0oux5.cloudfront.net/_ba3f304836a51cde0a9bda93d33232ce/rothch/db/1087/9527/pdf/Project+Planet+Investor+Presentation+-+Nov+2020.pdf
 CIIC,CIIG Merger Corp,Arrival,11/18/2020,12/15/2020,,,,,,First Quarter 2021,https://arrival-site-cms.s3.eu-west-2.amazonaws.com/39573881-229c-4bae-927b-969002d4a01b_Arrival_Investor_Presentation.pdf
-LGVW,Longview Acquisition Corp,Butterfly Network,11/20/2020,11/27/2020,1/6/2021,1/19/2021,,,,First Quarter 2021,https://manual.butterflynetwork.com/Butterfly+Investor+Presentation.pdf
-APXT,Apex Technology Acquisition Corporation,Avepoint,11/23/2020,,,,,,,First Quarter 2021,https://cdn.avepoint.com/pdfs/en/Apex-AvePoint%20Investor%20Presentation_Webcast_Final%20(11.23.2020).pdf
+LGVW,Longview Acquisition Corp,Butterfly Network,11/20/2020,11/27/2020,1/6/2021,1/19/2021,1/26/2021,1/26/2021,2/12/2021,SET,https://manual.butterflynetwork.com/Butterfly+Investor+Presentation.pdf
+APXT,Apex Technology Acquisition Corporation,Avepoint,11/23/2020,2/4/2021,,,,,,First Quarter 2021,https://cdn.avepoint.com/pdfs/en/Apex-AvePoint%20Investor%20Presentation_Webcast_Final%20(11.23.2020).pdf
 GIX,GigCapital2 Inc,Uphealth,11/23/2020,,,,,,,First Quarter 2021,https://uphealthinc.com/wp-content/uploads/2020/11/UpHealth-Investor-Presentation-112320.pdf
 INAQ,INSU Acquisition Corp,Metromile,11/24/2020,11/27/2020,12/31/2020,1/13/2021,1/14/2021,1/15/2021,2/9/2021,SET,https://assets.metromile.com/wp-content/uploads/2020/11/24120556/Ext-Investor-Preso-vFinal.pdf
 NGA,Northern Genesis Acquisition Corp,Lion Electric,11/30/2020,12/31/2020,,,,,,First Quarter 2021,https://pages.thelionelectric.com/wp-content/uploads/2020/11/Investor-Presentation_20203011.pdf
-CFII,CF Finance Acquisition Corp,View,11/30/2020,12/23/2020,,,,,,First Quarter 2021,https://view.com/sites/default/files/documents/View-Investor-Presentation-High.pdf
+CFII,CF Finance Acquisition Corp,View,11/30/2020,12/23/2020,1/26/2021,,,,,First Quarter 2021,https://view.com/sites/default/files/documents/View-Investor-Presentation-High.pdf
 STPK,Star Peak Energy Transition Corp,Stem,12/4/2020,12/17/2020,1/22/2021,,,,,First Quarter 2021,https://3zkqyz2t3xwi492ll518psvq-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Stem-Star-Peak-Investor-Presentation_Dec2020.pdf
-BFT,Foley Trasimene Acquisition Corp,Paysafe,12/7/2020,12/21/2020,,,,,,First Half 2021,https://s25.q4cdn.com/579018173/files/doc_presentations/2020/Foley-Trasimene-Acquisition-Corp.-II-and-Paysafe-investor-presentation.pdf
+BFT,Foley Trasimene Acquisition Corp,Paysafe,12/7/2020,12/21/2020,2/1/2021,,,,,First Half 2021,https://s25.q4cdn.com/579018173/files/doc_presentations/2020/Foley-Trasimene-Acquisition-Corp.-II-and-Paysafe-investor-presentation.pdf
 VSPR,Vesper Healthcare Acquisition Corp,HydraFacial,12/9/2020,12/31/2020,,,,,,First Half 2021,https://2y7msb2elfoj22q7jr2xnc83-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/Project-Hydrate-Investor-Presentation_vFinal.pdf
 SSPK,Silver Spike Acquisition Corp,Weedmaps,12/10/2020,1/19/2021,,,,,,First Half 2021,https://weedmaps.com/investors
-GIK,GigCapital3 Inc,Lighting eMotors,12/10/2020,12/31/2020,,,,,,First Quarter 2021,https://www.gigcapitalglobal.com/wp-content/uploads/Project-Power-Announcement-Deck_vF.pdf
+GIK,GigCapital3 Inc,Lighting eMotors,12/10/2020,12/31/2020,2/4/2021,,,,,First Quarter 2021,https://www.gigcapitalglobal.com/wp-content/uploads/Project-Power-Announcement-Deck_vF.pdf
 TPGY,TPG Pace Beneficial Finance Corp,EVBox,12/10/2020,,,,,,,First Quarter 2021,https://www.tpg.com/sites/default/files/2020-12/EVBox%20Group%20Investor%20Presentation_121720.pdf
 FIII,Forum Merger III Corporation,Electric Last Mile Solutions,12/11/2020,,,,,,,First Quarter 2021,https://forummerger.com/elms_investor.pdf
 CGRO,Collective Growth Corporation,Innoviz Technologies,12/11/2020,1/11/2021,,,,,,First Quarter 2021,https://innoviz.tech/wp-content/uploads/Project-Ignition-Announcement-Presentation_FinalDec11.pdf
-BRPA,Big Rock Partners Acquisition Corp,NeuroRx,12/14/2020,,,,,,,First Half 2021,https://sec.report/Document/0001654954-20-013699/brpa_ex992.htm
-THBR,Thunder Bridge Acquisition,Indie Semiconductor,12/15/2020,,,,,,,First Half 2021,https://sec.report/Document/0001213900-20-042670/ea131644ex99-2_thunder2.htm
-EXPC,Experience Investment Corp,Blade,12/15/2020,,,,,,,First Half 2021,https://sec.report/Document/0001104659-20-135523/tm2038448d1_ex99-2.htm
-NPA,New Providence Acquisition Corp,AST SpaceMobile,12/16/2020,12/23/2020,,,,,,First Quarter 2021,https://www.npa-corp.com/wp-content/uploads/2020/12/AST_SpaceMobile_Investor_Presentation_Public_12-15-20.pdf
-STIC,Northern Star Acquisition Corp,Barkbox,12/17/2020,,,,,,,Second Quarter 2021 (Q2),https://static1.squarespace.com/static/5fc915303436806905d7150e/t/5fdae20279e44d2bcf557f77/1608180228067/BARK-Overview-12162020.pdf
-FSRV,FinServ Acquisition Corp,Katapult,12/18/2020,,,,,,,Second Quarter 2021 (Q2),https://finservacquisition.com/wp-content/uploads/2020/12/Project-Keys-Investor-Presentation_Dec-2020.pdf
+BRPA,Big Rock Partners Acquisition Corp,NeuroRx,12/14/2020,1/27/2021,,,,,,First Half 2021,https://sec.report/Document/0001654954-20-013699/brpa_ex992.htm
+THBR,Thunder Bridge Acquisition,Indie Semiconductor,12/15/2020,1/25/2021,,,,,,First Half 2021,https://sec.report/Document/0001213900-20-042670/ea131644ex99-2_thunder2.htm
+EXPC,Experience Investment Corp,Blade,12/15/2020,1/29/2021,,,,,,First Half 2021,https://sec.report/Document/0001104659-20-135523/tm2038448d1_ex99-2.htm
+NPA,New Providence Acquisition Corp,AST SpaceMobile,12/16/2020,12/23/2020,1/27/2021,,,,,First Quarter 2021,https://www.npa-corp.com/wp-content/uploads/2020/12/AST_SpaceMobile_Investor_Presentation_Public_12-15-20.pdf
+STIC,Northern Star Acquisition Corp,Barkbox,12/17/2020,2/1/2021,,,,,,Second Quarter 2021 (Q2),https://static1.squarespace.com/static/5fc915303436806905d7150e/t/5fdae20279e44d2bcf557f77/1608180228067/BARK-Overview-12162020.pdf
+FSRV,FinServ Acquisition Corp,Katapult,12/18/2020,1/29/2021,,,,,,Second Quarter 2021 (Q2),https://finservacquisition.com/wp-content/uploads/2020/12/Project-Keys-Investor-Presentation_Dec-2020.pdf
 DFHT,Deerfield Healthcare Technology Acquisitions Corp,CareMax,12/18/2020,1/20/2021,,,,,,First Quarter 2021,http://s21.q4cdn.com/483767183/files/doc_presentations/2020/07/2020.04.01-Intro-to-CarMax.pdf
-CLA,Colonnade Acquisition Corp,Ouster,12/22/2020,12/22/2020,,,,,,First Half 2021,https://data.ouster.io/downloads/Ouster-investor-presentation_12222020.pdf
+CLA,Colonnade Acquisition Corp,Ouster,12/22/2020,12/22/2020,1/28/2021,,,,,First Half 2021,https://data.ouster.io/downloads/Ouster-investor-presentation_12222020.pdf
 JIH,Juniper Industrial Holdings Inc,Janus International,12/22/2020,,,,,,,First Half 2021,https://sec.report/Document/0001193125-20-323834/d57084dex992.htm
 ATAC,Altimar Acquisition Corporation,Blue Own Capital,12/23/2020,1/4/2021,,,,,,First Half 2021,https://sec.report/Document/0001193125-20-325370/d55795dex993.htm
-FTIV,Fintech Acquisition Corp,Perella Weinberg,12/30/2020,,,,,,,Q2,https://pwpartners.com/wp-content/uploads/2020/12/PWP-Investor-Presentation_12.30.20.pdf
-IPOE,Social Capital Hedosophia,SoFi,1/7/2021,,,,,,,Q1,https://www.dropbox.com/s/ffybqu77l1z4wxu/SoFi%20Investor%20Call%20Deck%20.pdf?dl=0
+FTIV,Fintech Acquisition Corp,Perella Weinberg,12/30/2020,2/5/2021,,,,,,Q2,https://pwpartners.com/wp-content/uploads/2020/12/PWP-Investor-Presentation_12.30.20.pdf
+IPOE,Social Capital Hedosophia,SoFi,1/7/2021,1/11/2021,,,,,,Q1,https://www.dropbox.com/s/ffybqu77l1z4wxu/SoFi%20Investor%20Call%20Deck%20.pdf?dl=0
 ACEV,Ace Convergence Acquisition Corp,Achronix,1/7/2021,,,,,,,Q2,https://www.achronix.com/sites/default/files/docs/Achronix_Ace_Merger_Presentation_VF.pdf
-GXGX,GX Acquisition Corp,Celularity,1/8/2021,,,,,,,Q2,https://celularity.com/investor-relations/
+GXGX,GX Acquisition Corp,Celularity,1/8/2021,1/25/2021,,,,,,Q2,https://celularity.com/investor-relations/
 VIH,VPC Impact Acquisition Holdings,Bakkt,1/11/2021,,,,,,,Q2,https://www.victoryparkcapital.com/wp-content/uploads/2021/01/Bakkt-Management-Presentation.pdf
-ACTC,ArcLight Clean Transition Corp,Proterra,1/12/2021,,,,,,,Q2,https://www.proterra.com/wp-content/uploads/2021/01/ACTC-Proterra-Investor-Presentation.pdf
-HEC,Hudson Executive Investment Corp,Talkspace,1/13/2021,,,,,,,Q2,https://assets.website-files.com/5ffcab1e683056d5c6862f12/5ffece868fe89543a673687d_Talkspace%20Investor%20Presentation.pdf
+ACTC,ArcLight Clean Transition Corp,Proterra,1/12/2021,2/3/2021,,,,,,Q2,https://www.proterra.com/wp-content/uploads/2021/01/ACTC-Proterra-Investor-Presentation.pdf
+HEC,Hudson Executive Investment Corp,Talkspace,1/13/2021,2/2/2021,,,,,,Q2,https://assets.website-files.com/5ffcab1e683056d5c6862f12/5ffece868fe89543a673687d_Talkspace%20Investor%20Presentation.pdf
 CRSA,Crescent Acquisition Corp,LiveVox,1/14/2021,,,,,,,Q2,https://crescentspac.com/assets/docs/2021-01-13%20LiveVox%20Investor%20Presentation.pdf
-THCB,Tuscan Holdings,Microvast,1/31/2021,,,,,,,Q1,http://www.microvast.com/upload/2021/01/31/161215244093615yvm5.pdf
+CLII,CLIMATE CHANGE CRISIS REAL IMPACT,EVgo,1/22/2021,,,,,,,Q2,https://www.evgo.com/wp-content/uploads/2021/01/evgo-investor-relations-presentation-final.pdf
+TSIA,TS Innovation Acquisition Corp,Latch,1/25/2021,,,,,,,Q2,https://www.dropbox.com/s/ngoz7eaa1uehn43/Latch%20Investor%20Presentation.pdf?dl=0
+IACA,Ion Acquisition Corp,Taboola,1/25/2021,,,,,,,Q2,https://www.taboola.com/wp-content/uploads/2021/01/pipe-investor-deck-2021.pdf
+SPRQ,Spartan ACQ,Sunlight Financial,1/25/2021,,,,,,,Q2,https://sunlightfinancial.com/sunlight-financial-investor-presentation.pdf
+LCY,Lancadia Holdings,Hillman Group,1/25/2021,2/3/2021,,,,,,Q2,https://www.hillmangroup.com//medias/Hillman-Investor-Presentation.pdf?context=bWFzdGVyfHJvb3R8NTM3MjY2OXxhcHBsaWNhdGlvbi9wZGZ8aDJlL2g2Zi84OTcxNTUxNDQwOTI2LnBkZnwyODMxMGE2YmRlMGQwNmE1ZmI4ODdjNTczYzc4NzcxYmRkYzBmNTcyOTRhN2UwZjI3MjhkNGIyY2NhNzE5OWUz
+WPF,Foley Trasimene Acquisition Corp ,Alight Solutions,1/25/2021,,,,,,,Q2,https://alight.com/getmedia/a50ade07-9903-490c-acb7-137274a601fc/Alight-SPAC-Announcement-Presentation-January-2021.pdf
+PSAC,Property Solutions Acquisition ,Faraday Future,1/28/2021,,,,,,,Q2,https://genesis-cdn.ff.com/Investors/FF-PIPE-Presentation-FFinal.pdf
+ANDA,Andina Acquisition corp,Stryve Foods,1/28/2021,,,,,,,Q2,
+PACE,TPG Pace Tech Opportunities,Nerdy,1/29/2021,,,,,,,Q2,https://www.tpg.com/sites/default/files/2021-01/210128%20Victory%20Investor%20Presentation_v05.pdf
+ALUS,Alussa Energy Acquisition,Freyr,1/29/2021,,,,,,,Q2,https://www.finansanalytiker.no/wp-content/uploads/2019/12/FREYR_Investment_Teaser_January_2020-Final.pdf
+ASPL,Aspirational Consumer Lifestyle,Wheels Up,2/1/2021,,,,,,,Q2,https://sec.report/Document/0001104659-21-009671/tm214639d1_ex99-2.htm
+THCB,Tuscan Holdings,Microvast,1/31/2021,,,,,,,Q1,http://www.microvast.com/upload/2021/02/05/16125326719819fmnxa.pdf
+KSMT,Kismet Acquisition One Corp,Nexters Global,2/1/2021,,,,,,,Q2,https://nexters.com/images/inv_info/Nexters_Investor_Presentation.pdf
+FST,Fast Acquisition Corp,Fertitta Entertainment,2/1/2021,,,,,,,Q2,
+SAII,Software Acquisition Group,Otonomo ,2/1/2021,,,,,,,Q2,https://info.otonomo.io/hubfs/PDF/OOOO-PIPE-Investor-Presentation.pdf
+LCAQ,Leisure Acquisition Corp,Ensysce Biosciences,2/1/2021,,,,,,,Q2,http://leisureacq.com/wp-content/uploads/2021/02/LACQ_Ensysce_Investor_Deck_vF.pdf
+ACAC,Acmes Acquisition Corp,Playstudios,2/1/2021,,,,,,,Q2,https://playstudios.com/wp-content/uploads/2021/02/PLAYSTUDIOS-Presentation_Public_2021-2-1.pdf
+HOL,Holicity Inc,Astra,2/2/2021,,,,,,,Q2,https://astra.com/wp-content/uploads/2021/02/Astra-Investor-Presentation.pdf
+VCVC,10X Capital Venture ACQ,Ree Automotive,2/3/2021,,,,,,,Q3,https://investors.ree.auto/wp-content/uploads/2021/02/Investor-Presentation.pdf
+FTOC,FTAC Olympus Acquisition Corp,Payoneer,2/3/2021,,,,,,,Q3,https://pubs.payoneer.com/docs/investor-presentation.pdf?_ga=2.112507524.1690910450.1612965960-1826049372.1612965960
+DGNR,Dragoneer Growth Opportunities,CCC information services,2/3/2021,,,,,,,Q3,https://www.dragoneergrowth.com/wp-content/uploads/2021/02/CCC-Investor-Presentation-2021.pdf
+VGAC,VG Acquisition Corp,23andMe,2/4/2021,,,,,,,Q2,https://mediacenter.23andme.com/company/investors/
