@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :name
       t.references :category, null: false, foreign_key: true
       t.references :user, null: false, foreign_key: true
-      t.jsonb :field_values
+      t.jsonb :values
 
       t.timestamps
     end

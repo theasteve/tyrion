@@ -24,6 +24,7 @@ module Tyrion
     config.load_defaults 6.0
     config.active_record.schema_format = :sql
 
+    config.active_record.dump_schema_after_migration = false
     config.api_only = true
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
