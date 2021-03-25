@@ -1,39 +1,33 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+user = User.create(name: 'Sam Tali')
 
+stock = user.stocks.create!(name: 'PLTR')
 
-user1 = User.create({full_name: 'Michael Jackson', email: 'a@example.com', password: 'abc', password_confirmation: 'abc'})
-user2 = User.create({full_name: 'Jim Jones', email: 'b@example.com', password: 'abc', password_confirmation: 'abc'})
-user3 = User.create({full_name: 'Alex Karp', email: 'c@example.com', password: 'abc', password_confirmation: 'abc'})
-user4 = User.create({full_name: 'Peter Thiel', email: 'd@example.com', password: 'abc', password_confirmation: 'abc'})
-user5 = User.create({full_name: 'Cookie', email: 'e@example.com', password: 'abc', password_confirmation: 'abc'})
-user6 = User.create({full_name: 'Tom Brady', email: 'f@example.com', password: 'abc', password_confirmation: 'abc'})
-user7 = User.create({full_name: 'Hilary CLinton', email: 'g@example.com', password: 'abc', password_confirmation: 'abc'})
-user8 = User.create({full_name: 'Kimberly Wang', email: 'h@example.com', password: 'abc', password_confirmation: 'abc'})
-user9 = User.create({full_name: 'Charlize Theron', email: 'i@example.com', password: 'abc', password_confirmation: 'abc'})
+category1 = stock.categories.create(name: "News", user: user)
+category2 = stock.categories.create(name: "Risks", user: user)
 
-transaction1 = StockTransaction.create({user_id: 1, stock_id: 5, track: true, buying: true })
+field_values = '[{"type": "link", "value": "url to article" }]'
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
+category1.items.create(name: 'Me', user: user, values: field_values)
 
-transaction2 = StockTransaction.create({user_id: 2, stock_id: 5, track: true, selling: true })
+field_values = '[{"type": "tweet", "value": "link to tweet" }]'
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
+category2.items.create(name: 'You', user: user, values: field_values)
 
-transaction3 = StockTransaction.create({user_id: 3, stock_id: 5, track: true, holding: true })
-
-stock5 = Stock.find(5)
-stock5.buying = 1
-stock5.selling = 1
-stock5.holding = 1
-
-
-transaction4 = StockTransaction.create({user_id: 2, stock_id: 3, track: true, holding: true })
-
-transaction5 = StockTransaction.create({user_id: 3, stock_id: 3, track: true, holding: true })
-
-stock3 = Stock.find(3)
-stock3.holding = 2
-
-
+puts "Seeded the database"
+puts "Stock ID: #{stock.id}"
